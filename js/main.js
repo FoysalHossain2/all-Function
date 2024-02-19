@@ -1,108 +1,106 @@
-// function addTwoNum(num1 , num2){
-//     // let result = (num1+ num2);
-//     // return result
+/ if
 
-//     return num1 + num2
+const isUserLoggedIng = true
+const temperature = 41
+
+
+if (temperature === 41){
+    // console.log("less then 50");
+} else {
+
+    // console.log("temperature is greater than 50");
+}
+
+const score = 150
+
+// if(score > 100){
+//     let power = 'fly'
+//     console.log(`User power : ${power}`);
+// }
+// console.log(`User power : ${power}`);
+
+
+const balance = 2000
+
+// if (balance > 500) console.log("test");
+
+// if(balance < 500) {
+//     console.log("less then 500");
+// } else if (balance < 750) {
+//     console.log("less then 750");
+// } else if (balance < 900){
+//     console.log("less then 900");
+// } else {
+//     console.log('less then 1500');
 // }
 
-// const result = addTwoNum(3,7)
-// // console.log(result);
 
-// function loginUserMessage(userName) {
+// const month = "march";
 
-// } 
+// switch (month) {
+//     case "january":
+//         console.log("january");
+//         break;
+//     case "february":
+//         console.log("february");
+//         break;
+//     case "march":
+//         console.log("march");
+//         break;
 
-function calculator(val1, val2, ...num1){
-    return num1
-}
-
-// console.log(calculator(200,300,400,500));
-
-// const user ={
-//     userName: 'Foysal Hossian',
-//     price: 200,
+//     default:
+//         break;
 // }
 
-// function handleObject(anyObject){
-//     console.log(`UserName is ${anyObject.userName} and price is ${anyObject.price}`);
-// }
-
-// handleObject(user)
 
 
+/* falsy values*/
+
+//false, 0, -0, Bigint 0n, "", null, undefined, NaN 
+
+/* truthy */
+// "0", 'false', "", [], {}, function(){}
 
 
-/* Nested scop*/
 
-function one(){
-    const userName = "Foysal"
+const userEmail = [];
 
-    function two(){
-        const website = 'youtube'
-        // console.log(website);
-    }
-    // console.log(userName); 
-
-    two()
+if(userEmail.length === 0){
+    // console.log("Array is empty");
 }
 
-one() 
+const emptyObj = {}
 
-
-
-/*if(true){
-    const userName= 'Hossain'
-    if(userName === 'Hossain'){
-        const website = ' google'
-        console.log(userName + website);
-    }
-    // console.log(website);
-}
-// console.log(userName);*/
-
-
-
-// ++++++++++++ interesting +++++++++++
-
-// function addOne(num){
-//     return num + 1
-// }
-
-// addOne(5) 
-
-
-// function one(){
-//     const userName = "Foysal"
-
-//     function two(){
-//         const website = "Facebook"
-//         console.log(userName);
-//     }
-
-//     // console.log(website);
-
-//     two()
-// }
-
-// one()
-
-
-
-fun2(5)
-function fun2(num){
-    return num + 4
+if (Object.keys(emptyObj).length === 0) {
+    console.log('object is empty');
 }
 
 
 
-addFun(6)
-const addFun = function fun3(num){
-    return num + 10
-}
+/****** 
+ false == 0
+true
+false == ''
+true
+0 == ''
+true 
+*********/
 
 
-// this is function scop
-function myFunction(){
-    let carName = "Volvo" 
-}
+
+// Nullish coalescing Operator (??):
+
+let val1;
+
+// val1 = 5 ??  10
+// val1 = null ?? 10
+// val1 = undefined ?? 15
+val1 = null ?? 10 ?? 35
+
+// console.log(val1);
+
+
+
+// Ternary Operator is different from Nullish coalescing Operator
+/* Ternary Operator */
 
